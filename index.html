@@ -2,15 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baparekraf for Startup</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Baparekraf for Startup" />
+    <meta name="keywords" content="Baparekraf for Startup" />
+    <meta name="author" content="ulamulem.com" />
+
+    <!-- Theming & Mobile -->
+    <meta name="theme-color" content="#06314c" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Baparekraf" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Baparekraf for Startup" />
+    <meta property="og:description" content="Baparekraf for Startup" />
+    <meta property="og:image" content="./logo.png" />
+    <meta property="og:url" content="./" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <link rel="shortcut icon" type="image/png" href="./logo.png" />
+    <link rel="apple-touch-startup-image" href="./logo.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Linaria App</title>
-    <script type="module" crossorigin src="./assets/index-Xg82wBOs.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-H9OZALgm.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+
+    <!-- Styles -->
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      .loader_fox {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      .loader_fox .loeader-inside {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        animation: anim 2s infinite;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .loader_fox .loeader-inside img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
+      }
+
+      @keyframes anim {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.3);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-63383e4a.js"></script>
+    <link rel="stylesheet" href="./assets/index-6d55789f.css">
   </head>
+
   <body>
-    <div id="root"></div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="app" class="loader_fox preloader-plus">
+      <div class="loeader-inside"><img src="./logo.png" alt="Logo" /></div>
+    </div>
+
+    
   </body>
 </html>
